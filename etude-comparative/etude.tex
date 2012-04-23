@@ -1,0 +1,79 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[francais]{babel}
+\usepackage{textcomp}
+\usepackage[top=3cm,right=3cm,bottom=3cm,left=3cm]{geometry}
+\usepackage{graphicx}
+
+\title{Migration de la solution de supervision\\Analyse comparative}
+\author{Clément Ghnassia\\Vincent Maheo}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter{Analyse des solutions}
+
+\section{Zabbix}
+
+\paragraph{}
+Zabbix est une solution complète de monitoring, intégrant supervision et métrologie de manière autonome et indépendante. Cette solution propose un nombre important de fonctionnalités, bien que toutefois peu modulable.
+
+\paragraph{}
+On pourrait qualifier le logiciel d'outil clé en main. L'avantage est qu'il peut être rapidement mis en place et facilement configurable. L'inconvénient est qu'il ne se limite pas forcément aux fonctionnalités nécessaires est peu donc vite devenir lourd et peu optimisé.
+
+\paragraph{}
+Zabbix est une application Open Source. Il est maintenu par la communauté du libre et a donc à la fois tous les avantages et les inconvénients qui sont propres aux logiciels libres. Ainsi, il n'offre aucun support et bien qu'il soit de plus en plus utilisé, il n'y a aucune certitude quand à son avenir à moyen et long terme.
+
+\paragraph{}
+L'interface web qui permet la configuration de Zabbix semble complète et permet de configurer et d'utiliser entièrement le logiciel, mais a l'inconvénient d'être plutôt chargée et il est parfois difficile de s'y retrouver. Elle nécessite un temps d'adaptation non négligeable.
+
+\paragraph{}
+Au final, si on souhaite résumer la solution, on peut dire qu'elle peut convenir a de petites structures, car son manque d'optimisation et de modularité le rendent lourd, et peut être qualifier de \og machine à gaz\fg. Il ne conviendra donc pas dans un contexte de grosse structure et où le monitoring est un élément central et critique. Malgré cela, Zabbix prend de plus en plus d'ampleur et suscite un engouement important de la part de la communauté, ce qui n'exclue pas un un développement conséquent qui l'amènera peut-être prochainement à se renforcer et à effacer ces faiblesse
+
+\begin{figure}[!h]
+  \includegraphics[scale=0.4]{img/zabbix.png}
+  \caption{Interface Web de Zabbix}
+\end{figure}
+
+\section{IPMonitor}
+
+\paragraph{}
+IPMonitor est une solution propriétaire appartenant à SolarWind. C'est une solution qui existe depuis assez longtemps, même si elle a été rachetée récemment. IPMonitor est une solution complète et adaptée à un contexte professionnel, mais se cantonne à un rôle de supervision. Si on souhaite avoir en plus des éléments de métrologie, il faudra donc mettre en place un logiciel spécialisé dans le domaine, et qui permet une interaction avec IPMonitor.
+
+\paragraph{}
+IPMonitor, bien que manquant de modularité, est plutôt performant, intuitif, et facile à configurer et à utiliser.
+On pourrait qualifier ce produit d'efficace. L'interface Web est plutôt bien pensée, et permet une configuration et une utilisation simple du produit tout en restant légère. On notera aussi qu'un support payant intégré existe, et qu'il oblige un maintien du produit sur le court terme. Il permet aussi de rassurer les utilisateurs dans un contexte professionnel et de ne pas rester coincé alors que le produit est un élément central dans l'entreprise.
+
+\paragraph{}
+Les principales qualités d'IPMonitor sont sans nul doute sa fiabilité, son interface user-friendly et l'organisation et la hiérarchisation des équipements supervisés, et la structuration sous forme de groupes, dynamiques ou non, ainsi que le monitoring distribué qui permet à une instance du logiciel de superviser en cascade d'autres instances sur d'autres serveurs. Tous ces éléments sont particulièrement bien pensés et adapté un contexte de supervision où de nombreux équipement sont présents et facilitent la tâche des utilisateurs. Cela en fait un produit de qualité et pensé pour une utilisation dans le milieu professionnel.
+
+\paragraph{}
+IPMonitor est aujourd'hui la solution utilisée dans l'entreprise. Bien que répondant à une majorité des besoins, on a pu s'apercevoir au fil du temps de certains défauts et limites, qui entraîne aujourd'hui cette étude qu'une migration soit sérieusement envisagée. On notera tout d'abord l'avenir incertain du produit : on ne connaît pas trop la direction que souhaite prendre la société propriétaire du produit et on a parfois l'impression qu'elle n'est elle-même pas encore décidée. De plus, on arrive aux limites de la solution concernant les performances sur de très grosses structures, quand le nombre d'équipements et de métriques à superviser est relativement important, comme c'est le cas actuellement. Enfin on retiendra le peu de modularité et le caractère entièrement propriétaire qui empêche tout développement personnel afin d'adapter le produit aux besoins.
+
+\paragraph{}
+Le fait qu'IPMonitor soit utilisé actuellement dans un contexte comme celui de l'entreprise montre indéniablement la qualité du produit. Toutefois le produit montrant de plus en plus ses faiblesses et limites, sur le plan technique mais encore plus sur le plan de la stratégie commerciale et un avenir incertain, il faudra s'attacher à vérifier si un produit possède les mêmes qualités, tout en vérifiant qu'il n'a pas les faiblesses d'IPMonitor, ou d'autres encore plus contraignantes.
+
+\begin{figure}[!h]
+  \includegraphics[scale=0.4]{img/ipmonitor.png}
+  \caption{Interface Web d'IPMonitor}
+\end{figure}
+
+\section{Centreon}
+
+\section{Nagios XI}
+
+\chapter{Etude comparative}
+
+\maketitle
+\tableofcontents
+
+\begin{abstract}
+\end{abstract}
+
+\section{}
+
+\end{document}
